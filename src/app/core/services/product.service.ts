@@ -132,7 +132,7 @@ export class ProductService {
   }
 
   getSearchList(search: string) {
-    var searchList: Product[];
+    var searchList: Product[] = [];
     for (let product of this.productList) {
       if (product.name.includes(search)) {
         searchList.push(product);

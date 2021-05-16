@@ -12,6 +12,7 @@ import { ProductGridComponent } from './components/product-grid/product-grid.com
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { DetailFormComponent } from './components/detail-form/detail-form.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { DetailFormComponent } from './components/detail-form/detail-form.compon
     CartComponent,
     ProductDescriptionComponent,
     ProductGridComponent,
-    DetailFormComponent
+    DetailFormComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,

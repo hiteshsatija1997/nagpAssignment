@@ -14,19 +14,7 @@ export class BodyComponent implements OnInit {
   constructor(private productService: ProductService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.route.queryParams
-      .subscribe(params => {
-        console.log(params); // { orderby: "price" }
-        this.name = params.name;
-        console.log(this.name); // price
-      }
-      );
-    if (null === this.name || undefined === this.name) {
-      this.products = this.productService.getList();
-    }
-    else {
-      this.products = this.productService.getSearchList(this.name);
-    }
+    this.products = this.productService.getList();
   }
 
 }
