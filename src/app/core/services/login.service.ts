@@ -9,12 +9,12 @@ export class LoginService {
   private userAuth: Map<string, User>
   constructor(private router: Router) {
     this.userList = [{
-      'userId': '1',
+      'userId': 'dummy@nagarro.com',
       'password': 'dummy',
-      'name': 'Hitesh'
+      'name': 'dummy'
     }];
     this.userAuth = new Map();
-    this.userAuth.set("1", this.userList[0]);
+    this.userAuth.set("dummy@nagarro.com", this.userList[0]);
   }
 
   private authenticate(userId: string, password: string): boolean {

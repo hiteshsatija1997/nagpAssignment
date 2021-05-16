@@ -22,8 +22,8 @@ export class LoginComponent implements OnInit {
       redirect = "#";
 
     }
-    if (this.loginService.loginAndRedirect(user, password, redirect)) {
-      return true;
+    if (!this.loginService.loginAndRedirect(user, password, redirect)) {
+      this.inValidate = true;
     }
   }
 }
