@@ -13,4 +13,8 @@ describe('ProductService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+
+  it('checks product list', () => {
+    expect(service.productList).toHaveSize(14)
+  })
 });

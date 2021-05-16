@@ -8,9 +8,9 @@ describe('BodyComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ BodyComponent ]
+      declarations: [BodyComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -22,4 +22,8 @@ describe('BodyComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should check value', () => {
+    expect(component.name).toBeUndefined();
+  })
 });

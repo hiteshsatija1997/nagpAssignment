@@ -12,17 +12,18 @@ export class LoginComponent implements OnInit {
   inValidate: boolean = false;
   ngOnInit(): void {
   }
-  login() {
-
+  login(user: string, password: string): boolean {
+    return this.loginService.login(user, password);
 
   }
   loginAndRedirectBack(user: string, password: string) {
     var redirect: string = window.sessionStorage.getItem('redirect');
     if (null === redirect) {
       redirect = "#";
+
     }
-    if(this.loginService.loginAndRedirect(user, password, redirect)){
-      
+    if (this.loginService.loginAndRedirect(user, password, redirect)) {
+      return true;
     }
   }
 }

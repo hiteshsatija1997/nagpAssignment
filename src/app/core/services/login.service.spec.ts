@@ -13,4 +13,7 @@ describe('LoginService', () => {
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
+  it('authenticate',()=>{
+    expect(service.login("1","dummy")).toBeTrue();
+  })
 });
