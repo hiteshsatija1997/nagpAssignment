@@ -12,102 +12,102 @@ export class ProductService {
     this.productList = [{
       'imageUrl': 'tshirt1',
       'productId': 'tshirt1',
-      'name': 'T Shirt Red Stripes',
+      'name': 'Marron Tshirt with black stripes',
       'description': 'String',
       'category': 'tshrit',
-      'price': 200
+      'price': 2500
     },
     {
       'imageUrl': 'tshirt2',
       'productId': 'tshirt2',
-      'name': 'String',
+      'name': 'Tri colored designer tshirt',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2000
     }, {
       'imageUrl': 'tshirt3',
       'productId': 'tshirt3',
-      'name': 'String',
+      'name': 'Designer Blue tshirt',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 1900
     }, {
       'imageUrl': 'tshirt4',
       'productId': 'tshirt4',
-      'name': 'String',
+      'name': 'Blue shirt',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2500
     }, {
       'imageUrl': 'tshirt5',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt5',
+      'name': 'yellow black striped tshirt',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 1000
     }, {
       'imageUrl': 'tshirt6',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt6',
+      'name': 'women black top',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2000
     }, {
       'imageUrl': 'tshirt7',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt7',
+      'name': 'women red designer top',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2200
     }, {
       'imageUrl': 'tshirt8',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt8',
+      'name': 'women cotton tshirt',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2000
     }, {
       'imageUrl': 'tshirt9',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt9',
+      'name': 'blue women top',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2020
     }, {
       'imageUrl': 'tshirt10',
-      'productId': 'String',
-      'name': 'String',
+      'productId': 'tshirt10',
+      'name': 'red women top',
       'description': 'String',
       'category': 'String',
       'price': 200
     }, {
-      'imageUrl': '',
-      'productId': 'String',
-      'name': 'String',
+      'imageUrl': 'tshirt11',
+      'productId': 'tshirt11',
+      'name': 'blue women top',
       'description': 'String',
       'category': 'String',
       'price': 200
     }, {
-      'imageUrl': '',
-      'productId': 'String',
-      'name': 'String',
+      'imageUrl': 'tshirt12',
+      'productId': 'tshirt12',
+      'name': 'cian dress women',
       'description': 'String',
       'category': 'String',
       'price': 200
     }, {
-      'imageUrl': '',
-      'productId': 'String',
-      'name': 'String',
+      'imageUrl': 'tshirt13',
+      'productId': 'tshirt13',
+      'name': 'printed women top',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 2200
     }, {
-      'imageUrl': '',
-      'productId': 'String',
-      'name': 'String',
+      'imageUrl': 'tshirt14',
+      'productId': 'tshirt14',
+      'name': 'pink women top',
       'description': 'String',
       'category': 'String',
-      'price': 200
+      'price': 900
     }]
 
     // for (var product of this.productList) {

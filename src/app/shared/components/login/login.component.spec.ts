@@ -24,6 +24,6 @@ describe('LoginComponent', () => {
   });
 
   it('checks login'), () => {
-    expect(component.login('1', 'dummy'))
+    expect(component.login('1', 'dummy')).toBeTrue();
   }
 });

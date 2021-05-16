@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-detail-form',
@@ -8,10 +10,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./detail-form.component.scss']
 })
 export class DetailFormComponent implements OnInit {
-
+  angForm: FormGroup;
   isSubmitted: boolean = false;
-  constructor(private router: Router) { }
-
+  constructor(private router: Router, private fb: FormBuilder) {
+    this.createForm();
+  }
+  createForm() {
+    this.angForm = this.fb.group({
+      name: ['', Validators.required]
+    });
+  }
   ngOnInit(): void {
   }
   form = new FormGroup({
@@ -20,12 +28,10 @@ export class DetailFormComponent implements OnInit {
     body: new FormControl('', Validators.required)
   });
   submit() {
-    // this.isSubmitted = true;
+    this.isSubmitted = true;
   }
   ok() {
     this.router.navigate(['']);
   }
-  get f(){
-    return this.form.controls;
-  }
+
 }
