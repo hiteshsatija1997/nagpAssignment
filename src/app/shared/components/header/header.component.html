@@ -1,0 +1,8 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/">NAGP eStore</a>
+  <form class="form-inline">
+    <input #searchIn class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" (click)="search(searchIn.value)">Search</button>
+  </form>
+  <button class="btn pi pi-shopping-cart" (click)="redirect()"></button>
+</nav>

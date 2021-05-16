@@ -1,0 +1,74 @@
+<div *ngIf ="!isSubmitted">
+  <div class="uk-section uk-section-muted uk-flex uk-flex-middle uk-animation-fade" uk-height-viewport>
+    <div class="uk-width-1-1">
+      <div class="uk-container">
+        <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+          <div class="uk-width-1-1@m">
+            <div
+              class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+              <h3 class="uk-card-title uk-text-center">please fill details for Delivery</h3>
+
+              <form [(ngModel)]="form.name" #name="ngModel">
+                <div class="uk-margin">
+                  <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                    <input #user class="uk-input uk-form-large" type="text" placeholder="Name">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: home"></span>
+                    <input #address class="uk-input uk-form-large" type="text" placeholder="Address">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: location"></span>
+                    <input #city class="uk-input uk-form-large" type="text" placeholder="City">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: receiver"></span>
+                    <input #phone class="uk-input uk-form-large" type="tel" pattern="[0-9]"  placeholder="phone ">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <div class="uk-inline uk-width-1-1">
+                    <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                    <input #user class="uk-input uk-form-large" type="text" placeholder="Email">
+                  </div>
+                </div>
+                <div class="uk-margin">
+                  <button class="uk-button uk-button-primary uk-button-large uk-width-1-1"
+                    (click)="submit()">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf ="isSubmitted">
+  <div class="uk-section uk-section-muted uk-flex uk-flex-middle uk-animation-fade" uk-height-viewport>
+    <div class="uk-width-1-1">
+      <div class="uk-container">
+        <div class="uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+          <div class="uk-width-1-1@m">
+            <div
+              class="uk-margin uk-width-large uk-margin-auto uk-card uk-card-default uk-card-body uk-box-shadow-large">
+              <h3 class="uk-card-title uk-text-center">Order Placed Successfully</h3>
+
+              
+                  <button class="uk-button uk-button-primary uk-button-large uk-width-1-1"
+                    (click)="ok()">ok</button>
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
