@@ -13,7 +13,7 @@ const routes: Routes = [
   { path: "product", component: ProductDescriptionComponent },
   { path: "login", component: LoginComponent },
   { path: "search", component: BodyComponent },
-  { path: "**", component: BodyComponent }
+  // { path: "**", component: BodyComponent }
 ];
 
 @NgModule({
