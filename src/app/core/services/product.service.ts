@@ -143,4 +143,6 @@ export class ProductService {
   getProductById(idProduct: string): Product {
     return this.productMap.get(idProduct);
   }
+
+  
 }
